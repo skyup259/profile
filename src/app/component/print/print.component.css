@@ -1,0 +1,16 @@
+.card-body:hover .print-bw{
+  display: none;
+}
+
+.card-body:hover .print-col {
+  display: inline;
+}
+
+.print-col {
+  display: none;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+}

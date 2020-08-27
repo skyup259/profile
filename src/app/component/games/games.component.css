@@ -1,0 +1,23 @@
+.card {
+  border: none;
+}
+
+.ruler {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.p-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bgColor {
+  background-color: #ebebeb;
+}
+
+.svg-icon {
+  height: 6rem;
+  fill: #007bff;
+}

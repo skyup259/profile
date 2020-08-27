@@ -1,0 +1,64 @@
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateX(0deg);
+}
+
+.card-flip:hover .card-front {
+  transform: rotateX(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateX(0deg);
+}
+
+.carousel:focus {
+  outline: none !important;
+}
+
+.p-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bgColor {
+  background-color: #ebebeb;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+ .carousel-item {
+  display: block !important;
+  z-index: 1;
+  position: absolute;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-item.active {
+  position: relative;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card {
+  border: none;
+}
+
+.ruler {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1rem solid rgba(0, 0, 0, 0.1);
+}

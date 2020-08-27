@@ -1,0 +1,48 @@
+<div class="rounded">
+  <div class="row px-5 mt-4 rounded">
+    <div class="col-12 ruler rounded"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 px-5">
+      <h3>Skills</h3>
+    </div>
+  </div>
+
+<div class="px-5 mt-2 rounded">
+  <ngb-carousel class="bgColor"
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="true"
+  interval="pause">
+    <ng-template ngbSlide *ngFor="let number of numbers; let i = index">
+      <div>
+        <div class="row px-5 mt-1 align-center">
+          <div class="col pl-2 p-bottom-40" *ngFor="let data of data.slice(i, i+5)">
+            <div class="card bgColor" style="width: 9rem;">
+                <h5 class="card-title ml-1">
+                  <circle-progress
+                    [percent]="data.percentage"
+                    [radius]="55"
+                    [outerStrokeWidth]="10"
+                    [innerStrokeWidth]="8"
+                    [animation]="true"
+                    [backgroundGradient] = "true"
+                    [title] = "data.title"
+                    [subtitle] = "data.percentage + ' %'"
+                    [subtitleColor] = "'green'"
+                    [subtitleFontSize] = "15"
+                    [titleFontSize] = "15"
+                  ></circle-progress>
+                </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+</div>
+
+
+
+
+

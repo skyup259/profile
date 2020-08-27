@@ -1,0 +1,71 @@
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateX(0deg);
+}
+
+.card-back {
+  transform: rotateX(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateX(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateX(0deg);
+}
+
+.carousel:focus {
+  outline: none !important;
+}
+
+.p-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bgColor {
+  background-color: #ebebeb;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+.backCard {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  -webkit-box-orient: vertical;
+ }
+
+ .carousel-item {
+  display: block !important;
+  z-index: 1;
+  position: absolute;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.carousel-item.active {
+  position: relative;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.font-style {
+  font-size: 10px;
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+.card-body:hover .interactive-bw{
+  display: none;
+}
+
+.card-body:hover .interactive-col {
+  display: inline;
+}
+
+.interactive-col {
+  display: none;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
