@@ -1,30 +1,38 @@
-<div class="px-5 rounded">
-  <ngb-carousel class="bgColor "
-  [showNavigationArrows]="false"
-  [showNavigationIndicators]="true"
-  interval="5000">
-    <ng-template ngbSlide *ngFor="let number of numbers; let i = index">
-      <div>
-        <div class="row px-5 mt-1 align-center">
-          <div class="col-6 col-md-2 pl-2 p-bottom-40" *ngFor="let data of data.slice(i, i+ numberOfCard)">
-            <div class="card card-flip rounded border-1" style="width: 7rem;">
-              <div class="row card-front rounded">
-                <div class="card-body p-2">
-                  <h5 class="card-title mb-0">
-                    <img [src]="data.event" class="img-fluid rounded"/>
-                  </h5>
-                  <p class="card-text opacity-6 font-style">{{data.caption}}</p>
+<div class="rounded">
+  <div class="row px-5 mt-4 rounded">
+    <div class="col-12 ruler rounded"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 px-5">
+      <h3>Books</h3>
+    </div>
+  </div>
+
+  <div class="px-5 rounded">
+    <ngb-carousel class="bgColor " [showNavigationArrows]="false" [showNavigationIndicators]="true" interval="5000">
+      <ng-template ngbSlide *ngFor="let number of numbers; let i = index">
+        <div>
+          <div class="row px-5 mt-1 align-center">
+            <div class="col-6 col-md-2 pl-2 p-bottom-40" *ngFor="let data of data.slice(i, i+ numberOfCard)">
+              <div class="card card-flip rounded border-1" style="width: 7rem;">
+                <div class="row card-front rounded">
+                  <div class="card-body p-2">
+                    <h5 class="card-title mb-0">
+                      <img [src]="data.event" class="img-fluid rounded" />
+                    </h5>
+                    <p class="card-text opacity-6 font-style">{{data.caption}}</p>
+                  </div>
                 </div>
-              </div>
-              <div class="row card-back rounded border-0">
-                <div class="card-body">
-                  <p class="card-text fontSize-10 backCard">{{data.descripation}}</p>
+                <div class="row card-back rounded border-0">
+                  <div class="card-body">
+                    <p class="card-text fontSize-10 backCard">{{data.descripation}}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+      </ng-template>
+    </ngb-carousel>
+  </div>
 </div>

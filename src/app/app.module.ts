@@ -19,6 +19,8 @@ import { SlidingcardComponent } from './component/slidingcard/slidingcard.compon
 import { SkillsComponent } from './component/skills/skills.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    NgxPageScrollCoreModule.forRoot({duration: 1500}),
+    NgxPageScrollModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       "radius": 60,
