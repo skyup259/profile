@@ -54,7 +54,7 @@ export class SkillsComponent implements OnInit {
       experience: '5'
     }
   ];
-  numberOfSkills =6;
+  numberOfSkills = 6;
 
 
   dataLen: number;

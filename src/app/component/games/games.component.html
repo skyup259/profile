@@ -7,44 +7,25 @@
       <h3>Games</h3>
     </div>
   </div>
-
   <div class="px-5 mt-2 rounded">
-    <div class="row px-5 mt-1 align-center">
-      <div class="col-6 col-md-2 pl-2 p-bottom-40">
-        <div class="card bgColor" >
-          <h1 class="card-title ml-1">
-            <img class="svg-icon" src='assets/carrom.svg' >
-          </h1>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 pl-2 p-bottom-40">
-        <div class="card bgColor" >
-          <h1 class="card-title ml-1">
-            <img class="svg-icon" src='assets/sports_tennis-black-18dp.svg' >
-          </h1>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 pl-2 p-bottom-40">
-        <div class="card bgColor" >
-          <h1 class="card-title ml-1">
-            <img class="svg-icon" src='assets/cricket.svg' >
-          </h1>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 pl-2 p-bottom-40">
-        <div class="card bgColor" >
-          <h1 class="card-title ml-1">
-            <img class="svg-icon" src='assets/football.svg' >
-          </h1>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 pl-2 p-bottom-40">
-        <div class="card bgColor" >
-          <h1 class="card-title ml-1">
-            <img class="svg-icon" src='assets/ping-pong.svg' >
-          </h1>
+    <ngb-carousel class="bgColor "
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="true"
+  interval="5000">
+    <ng-template ngbSlide *ngFor="let number of numbers; let i = index">
+      <div>
+      <div class="row px-5 mt-1 align-center">
+        <div class="col-4 col-md-2 pl-2 p-bottom-40" *ngFor="let data of data.slice(i, i+ numberOfGames)">
+          <div class="card bgColor">
+            <h1 class="card-title ml-1">
+              <img class="svg-icon" [src]="data.path" >
+            </h1>
+          </div>
         </div>
       </div>
     </div>
+    </ng-template>
+    </ngb-carousel>
   </div>
+
 </div>

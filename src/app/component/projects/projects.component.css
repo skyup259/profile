@@ -40,3 +40,18 @@
 .global-bg-color {
   background-color: #ebebeb;
 }
+
+@media (max-width: 450px) {
+  .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .card-body {
+    padding: 0.25rem;
+  }
+
+  .ruler {
+    margin-top: 0;
+  }
+}

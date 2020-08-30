@@ -68,6 +68,10 @@
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
+
+  .ruler {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 450px)and (max-width: 800px) {

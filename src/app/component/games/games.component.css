@@ -22,14 +22,43 @@
   fill: #007bff;
 }
 
+
+.carousel-item {
+  display: block !important;
+  z-index: 1;
+  position: absolute;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-item.active {
+  position: relative;
+  transition: opacity 1.5s easy-in-out, visibility 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card {
+  border: none;
+}
+
+.carousel:focus {
+  outline: none !important;
+}
+
 @media only screen and (max-width: 450px) {
   .svg-icon {
-    height: 3rem;
+    height: 4.5rem;
   }
 
   .px-5 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+
+  .ruler {
+    margin-top: 0;
   }
 }
 

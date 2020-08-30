@@ -1,0 +1,5 @@
+@media (max-width: 450px) {
+  .col-sm {
+    border-right: 0 !important;
+  }
+}
