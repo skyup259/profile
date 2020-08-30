@@ -21,3 +21,20 @@
   height: 6rem;
   fill: #007bff;
 }
+
+@media only screen and (max-width: 450px) {
+  .svg-icon {
+    height: 3rem;
+  }
+
+  .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .svg-icon {
+    height: 5rem;
+  }
+}

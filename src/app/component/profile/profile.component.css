@@ -5,3 +5,18 @@
 .global-bg-color {
   background-color: #ebebeb;
 }
+
+@media (max-width: 450px) {
+  .img-style {
+    height: 100px;
+    max-width: 100px;
+  }
+
+  .img-div {
+    text-align: center;
+  }
+
+  .profile-subtitle{
+    padding: 0px 0;
+  }
+}

@@ -28,3 +28,9 @@
   text-shadow : 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #04741d, 0 0 30px #04741d, 0 0 40px #04741d, 0 0 50px #04741d, 0 0 75px #04741d;
 letter-spacing : 5px;
 }
+
+@media (max-width: 450px) {
+  .navbar {
+    float: right;
+  }
+}

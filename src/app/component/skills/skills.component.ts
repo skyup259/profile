@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { HostListener, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -54,15 +54,35 @@ export class SkillsComponent implements OnInit {
       experience: '5'
     }
   ];
+  numberOfSkills =6;
 
 
   dataLen: number;
   numbers: any;
   constructor() { }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event): void {
+    if (event.target.innerWidth < 450) {
+      this.numberOfSkills = 2;
+    } else if (event.target.innerWidth < 750) {
+      this.numberOfSkills = 3;
+    } else {
+      this.numberOfSkills = 6;
+    }
+  }
+
+
   ngOnInit(): void {
     this.dataLen = this.data.length - 5;
     this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
+    if (window.innerWidth < 450) {
+      this.numberOfSkills = 2;
+    } else if (window.innerWidth < 750) {
+      this.numberOfSkills = 3;
+    } else {
+      this.numberOfSkills = 6;
+    }
   }
 
 }

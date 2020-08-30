@@ -16,5 +16,8 @@
     {
       "path": "./e2e/tsconfig.json"
     }
-]
+],
+"paths": {
+  "assests/*": [ "assests/*" ]    // src/assests
+}
 }

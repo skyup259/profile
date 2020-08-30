@@ -69,3 +69,17 @@
   font-size: 10px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 450px) {
+  .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (min-width: 450px)and (max-width: 800px) {
+  .px-5 {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+}
