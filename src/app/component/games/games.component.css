@@ -19,6 +19,7 @@
 
 .svg-icon {
   height: 6rem;
+  width: 6rem;
   fill: #007bff;
 }
 
@@ -50,6 +51,7 @@
 @media only screen and (max-width: 450px) {
   .svg-icon {
     height: 4.5rem;
+    width: 4.5rem;
   }
 
   .px-5 {
@@ -65,5 +67,6 @@
 @media (min-width: 450px) and (max-width: 800px) {
   .svg-icon {
     height: 5rem;
+    width: 5rem;
   }
 }

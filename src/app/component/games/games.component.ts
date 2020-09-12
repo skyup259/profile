@@ -22,43 +22,49 @@ export class GamesComponent implements OnInit {
     },
     {
       title: 'Badminton',
-      path: 'assets/sports_tennis-black-18dp.svg'
+      path: 'assets/badminton.png'
     },
     {
       title: 'Cricket',
       path: 'assets/cricket.svg'
+    },
+    {
+      title: 'Computer Games',
+      path: 'assets/computergames.svg'
+    },
+    {
+      title: 'Computer Games',
+      path: 'assets/computergames.svg'
     }
   ];
   dataLen: number;
   numbers: any;
-  numberOfGames = 5;
+  numberOfGames = 6;
   constructor() { }
 
   @HostListener('window:resize', ['$event'])
   onResize(event): void {
     if (event.target.innerWidth < 450) {
       this.numberOfGames = 3;
-      this.dataLen = this.data.length - this.numberOfGames;
-      this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
-    } else if (event.target.innerWidth < 750) {
+    } else if (event.target.innerWidth < 780) {
       this.numberOfGames = 5;
     } else {
-      this.numberOfGames = 5;
+      this.numberOfGames = 6;
     }
+    this.dataLen = this.data.length - this.numberOfGames;
+    this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
   }
 
   ngOnInit(): void {
-    this.dataLen = 1;
-    this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
     if (window.innerWidth < 450) {
       this.numberOfGames = 3;
-      this.dataLen = this.data.length - this.numberOfGames;
-      this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
-    } else if (window.innerWidth < 750) {
+    } else if (window.innerWidth < 780) {
       this.numberOfGames = 5;
     } else {
-      this.numberOfGames = 5;
+      this.numberOfGames = 6;
     }
+    this.dataLen = this.data.length - this.numberOfGames;
+    this.numbers = Array(this.dataLen).fill(0).map((x, i) => i);
   }
 
 }

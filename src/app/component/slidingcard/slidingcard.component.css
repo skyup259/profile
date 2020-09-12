@@ -88,10 +88,14 @@
   }
 }
 
-@media (min-width: 450px)and (max-width: 800px) {
+@media (min-width: 450px) and (max-width: 800px) {
   .px-5 {
     padding-left: 0rem !important;
     padding-right: 0rem !important;
+  }
+
+  .bookcard {
+    margin-left: 3rem;
   }
 }
 
