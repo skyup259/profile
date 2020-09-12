@@ -18,7 +18,7 @@
         <div class="col-4 col-md-2 pl-2 p-bottom-40" *ngFor="let data of data.slice(i, i+ numberOfGames)">
           <div class="card bgColor">
             <h1 class="card-title ml-1">
-              <img class="svg-icon" [src]="data.path" >
+              <img class="svg-icon" [ngClass]="{'shake': !data.animation, 'fa-spin': data.animation, 'fa-1x': data.animation}" [src]="data.path">
             </h1>
           </div>
         </div>

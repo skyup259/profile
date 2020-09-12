@@ -114,3 +114,8 @@ p .fa {
 .profile-detail p {
   margin-top: 3rem;
 }
+
+.fa-spin {
+  -webkit-animation: fa-spin 10s infinite linear;
+  animation: fa-spin 10s infinite linear;
+}

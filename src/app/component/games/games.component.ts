@@ -18,7 +18,8 @@ export class GamesComponent implements OnInit {
     },
     {
       title: 'Football',
-      path: 'assets/football.svg'
+      path: 'assets/football.svg',
+      animation: 'spin'
     },
     {
       title: 'Badminton',
