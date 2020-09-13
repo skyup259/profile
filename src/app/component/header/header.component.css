@@ -29,15 +29,57 @@
 letter-spacing : 5px;
 }
 
+.card {
+  text-align: center;
+  border-radius: 0;
+}
+
+.card:hover {
+  background-color: #dddcdc;
+}
+
+.global-bg-color {
+  background-color: #ebebeb;
+}
+
+.color-black {
+  color: black
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.close {
+  outline: none;
+}
+
+.modal-body .row {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.modal-header {
+  border-radius: 0;
+}
+
 @media (min-width: 380px) and (max-width: 450px) {
   .navbar {
     float: right;
     padding: 0.5rem 3.6rem;
+  }
+
+  .color-black {
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 380px) {
   .navbar {
     padding: 0.5rem 2rem;
+  }
+
+  .color-black {
+    font-size: 1.25rem;
   }
 }

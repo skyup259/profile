@@ -7,10 +7,74 @@
     </nav>
   </div>
   <div class="col-6 col-md-6 float-right">
-    <div class="container" (click)="hamburger(this)">
+    <div class="container" (click)="open(content)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
   </div>
+
+  <ng-template #content let-modal>
+    <div class="modal-header global-bg-color">
+      sks.in
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body pt-0 pb-0">
+      <div class="row">
+        <div class="col-6 p-0">
+          <a pageScroll href="#projects" class="text-decoration-none">
+            <div class="card global-bg-color" (click)="modal.dismiss('Cross click')">
+              <div class="card-body">
+                <h2 class="col-12"><i class="fa fa-files-o"></i></h2>
+                <div class="col-12">
+                  <h3 class="color-black">Projects</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 p-0">
+          <a pageScroll href="#skills" class="text-decoration-none">
+            <div class="card global-bg-color" (click)="modal.dismiss('Cross click')">
+              <div class="card-body">
+                <h2 class="col-12"><i class="fa fa-cogs"></i></h2>
+                <div class="col-12">
+                  <h3 class="color-black">Skills</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 p-0 m-0">
+          <a pageScroll href="#books" class="text-decoration-none">
+            <div class="card global-bg-color" (click)="modal.dismiss('Cross click')">
+              <div class="card-body">
+                <h2 class="col-12"><i class="fa fa-book"></i></h2>
+                <div class="col-12">
+                  <h3 class="color-black">Books</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 p-0">
+          <a pageScroll href="#games" class="text-decoration-none">
+            <div class="card global-bg-color" (click)="modal.dismiss('Cross click')">
+              <div class="card-body">
+                <h2 class="col-12"><i class="fa fa-gamepad"></i></h2>
+                <div class="col-12">
+                  <h3 class="color-black">Games</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </ng-template>
 </div>

@@ -3,3 +3,14 @@
     border-right: 0 !important;
   }
 }
+
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .row .col-2{
+    padding-right: 0 !important;
+  }
+
+  .h3 {
+    font-size: 1.3rem;
+  }
+}
